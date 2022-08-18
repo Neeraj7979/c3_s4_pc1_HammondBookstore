@@ -1,6 +1,13 @@
+package data;
+
 public class Author {
     private String authorName;
     private String authorPenName;
+
+    public Author(String authorName, String authorPenName) {
+        this.authorName = authorName;
+        this.authorPenName = authorPenName;
+    }
 
     public String getAuthorName() {
         return authorName;
@@ -17,8 +24,9 @@ public class Author {
     public void setAuthorPenName(String authorPenName) {
         this.authorPenName = authorPenName;
     }
-    public void displayAuthorDetails(){
-        System.out.println("authorName = " + authorName);
-        System.out.println("authorPenName = " + authorPenName);
+    @Override
+    public String toString(){
+       return "Author Name :"+'\''+getAuthorName()+'\''
+               +"\nAuthor pen Name: "+'\''+getAuthorPenName()+'\'';
     }
 }

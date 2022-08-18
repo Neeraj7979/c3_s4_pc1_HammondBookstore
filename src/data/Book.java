@@ -1,3 +1,5 @@
+package data;
+
 public class Book {
     private long isbnNumber;
     private String title;
@@ -46,10 +48,11 @@ public class Book {
         this.author = author;
     }
     public void displayBookDetails(){
-        System.out.println("isbnNumber = " + isbnNumber);
-        System.out.println("title = " + title);
-        System.out.println("description = " + description);
-        System.out.println("price = " + price);
+        System.out.println("ISBN Number : " + isbnNumber);
+        System.out.println("Book Title : " + title);
+        System.out.println("Book Description : " + description);
+        System.out.println("Book Price : " + price);
+
 
 
 
