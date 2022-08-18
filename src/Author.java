@@ -17,4 +17,8 @@ public class Author {
     public void setAuthorPenName(String authorPenName) {
         this.authorPenName = authorPenName;
     }
+    public void displayAuthorDetails(){
+        System.out.println("authorName = " + authorName);
+        System.out.println("authorPenName = " + authorPenName);
+    }
 }

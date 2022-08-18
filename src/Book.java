@@ -45,4 +45,13 @@ public class Book {
     public void setAuthor(Author author) {
         this.author = author;
     }
+    public void displayBookDetails(){
+        System.out.println("isbnNumber = " + isbnNumber);
+        System.out.println("title = " + title);
+        System.out.println("description = " + description);
+        System.out.println("price = " + price);
+
+
+
+    }
 }
